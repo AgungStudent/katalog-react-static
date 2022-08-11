@@ -24,6 +24,73 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <!-- font awecome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="assets/css/theme.css" rel="stylesheet" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+
+      @media (max-width: 767px) {
+        .carousel-inner .carousel-item > div {
+          display: none;
+        }
+        .carousel-inner .carousel-item > div:first-child {
+          display: block;
+        }
+        .col-md-1 .hr-line {
+          height: 2.3px;
+          width: 95%;
+          color: #3eb8f4;
+          opacity: 0.5;
+        }
+      }
+      @media (min-width: 768px) {
+        .carousel-inner .carousel-item-end.active,
+        .carousel-inner .carousel-item-next {
+          transform: translateX(25%);
+        }
+        .carousel-inner .carousel-item-start.active,
+        .carousel-inner .carousel-item-prev {
+          transform: translateX(-25%);
+        }
+      }
+      .image-logo {
+        height: 2.3rem;
+      }
+
+      .col-md-1 .hr-line {
+        width: 2.3px;
+        height: 95%;
+        color: #3eb8f4;
+        opacity: 0.5;
+      }
+
+      .carousel-inner .carousel-item.active,
+      .carousel-inner .carousel-item-next,
+      .carousel-inner .carousel-item-prev {
+        display: flex;
+        background: white;
+      }
+      .carousel-inner .carousel-item-end,
+      .carousel-inner .carousel-item-start {
+        transform: translateX(0);
+      }
+
+    </style>
     <title>React App</title>
   </head>
   <body>
@@ -39,5 +106,15 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script>
+      AOS.refresh()
+      AOS.init({
+        once: true,
+        duration: 3000,
+      })
+    </script>
   </body>
 </html>
