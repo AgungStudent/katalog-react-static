@@ -6,16 +6,15 @@ const finishingMachine = {
 }
 
 const profileCompany = {
-    address: 'Jl. Kartini PR 11 No 108 Selasar Salatiga',
-    telp: '088808888880',
-    email:'sidocvmulyo@gmail.com',
-    name: ' Sidomulyo Advertising',
-    specialist: 'Advertising Agency',
-    started_at: '12 November 2020',
-    notaris: 'Susi Haryati, SH., M.KN.',
-    nib: '0244010152804',
-    npwp: '96.571.368.8-505.000',
-    director: 'Joshua Franco Wibowo'
+    Alamat: 'Jl. Kartini PR 11 No 108 Selasar Salatiga',
+    Telepon: '+6288808888880',
+    Email:'sidocvmulyo@gmail.com',
+    Bidang: 'Advertising Agency',
+    "Akte Pendirian": '12 November 2020',
+    Notaris: 'Susi Haryati, SH., M.KN.',
+    NIB: '0244010152804',
+    NPWP: '96.571.368.8-505.000',
+    Director: 'Joshua Franco Wibowo'
 }
 
 const misiVisi = {

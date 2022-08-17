@@ -2,6 +2,7 @@ import React from "react"
 import ListNavbar from "./ListNavbar"
 
 export default function Navbar() {
+  const pathName = window.location.pathname
   return (
     <nav
       className="navbar navbar-expand-lg navbar-light fixed-top py-3 backdrop"
@@ -26,20 +27,21 @@ export default function Navbar() {
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav ms-auto pt-2 pt-lg-0">
-            <ListNavbar link="#home" content="Beranda" />
-            <ListNavbar link="#visi-misi" content="Visi Misi" />
-            <ListNavbar link="#product" content="Produk" />
-            <ListNavbar link="#client" content="Klien Kita" />
-            <ListNavbar link="#contact" content="Kontrak" />
+            <ListNavbar link="/" content="Landing Page" />
+            <ListNavbar link="/about" content="Tentang Kami" />
+            <ListNavbar link="/products" content="Produk" />
+            <ListNavbar link="/clients" content="Klein Kami" />
+            {/* <ListNavbar link="#client" content="Klien Kita" />
+            <ListNavbar link="#contact" content="Kontrak" /> */}
           </ul>
-          <form className="ps-lg-5">
+          {/* <form className="ps-lg-5">
             <button
               className="btn btn-lg btn-primary rounded-pill bg-gradient order-0"
               type="submit"
             >
               Login
             </button>
-          </form>
+          </form> */}
         </div>
       </div>
     </nav>

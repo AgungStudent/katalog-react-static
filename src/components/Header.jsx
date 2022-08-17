@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom'
+import ListNavbar from './ListNavbar'
+
 const Header = () => {
   return (
     <section
@@ -29,13 +32,12 @@ const Header = () => {
               jasa digital printing&Advertising dengan didukung oleh mesin-mesin
               tercanggih dan terbaru,serta management SDM yg profesional
             </p>
-            <a href="#" className="btn btn-primary rounded-pill px-3">
+            <Link to="/about" className="btn btn-primary rounded-pill px-3">
               Tentang Kami
-            </a>
+            </Link>
           </div>
         </div>
       </div>
-
       <svg xmlns="assets/img/illustrations/wave.svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
