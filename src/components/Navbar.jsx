@@ -5,8 +5,15 @@ export default function Navbar() {
   const pathName = window.location.pathname
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-light fixed-top py-3 backdrop bg-white"
+      className="navbar navbar-expand-lg navbar-light py-3 backdrop"
       data-navbar-on-scroll="data-navbar-on-scroll"
+      style={{
+        position: 'absolute',
+        top: '0',
+        left: '0',
+        right: '0',
+        zIndex: '1'
+      }}
     >
       <div className="container">
         <img src="/assets/img/sidomulyo2.png" className="image-logo" alt="" />

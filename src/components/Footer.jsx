@@ -5,7 +5,7 @@ export default function Footer({ profileCompany, finishingMachine }) {
   const icons = [" fa-home ", " fa-phone ",  " fa-envelope "]
 
   return (
-    <footer className="text-center text-lg-start text-muted text-danger bg-primary-gradient" style={{
+    <footer className="text-center text-lg-start text-muted text-dark bg-primary-gradient" style={{
       position: 'absolute',
       left: '0',
       right: '0'
@@ -20,7 +20,7 @@ export default function Footer({ profileCompany, finishingMachine }) {
           <a href="" className="me-4 ">
             <i className="fab fa-twitter"></i>
           </a>
-          <a href="mailto:sidocvmulyo@gmail.com" className="me-4 ">
+          <a href="" className="me-4 ">
             <i className="fab fa-google"></i>
           </a>
           <a href="" className="me-4 ">
@@ -45,14 +45,15 @@ export default function Footer({ profileCompany, finishingMachine }) {
               title="Finishing Machine"
             />{" "}
             {/* Finishing machine */}
-            <ComponentFooter /> {/* Fasilitas Penunjang */}
-            <ComponentFooter /> {/* Produk */}
             <ComponentFooter
               title="Kontak"
               datas={Object.values(profileCompany).slice(0, 3)}
               icons={icons}
             />{" "}
             {/* Produk */}
+
+            <ComponentFooter /> {/* Fasilitas Penunjang */}
+            <ComponentFooter /> {/* Produk */}
           </div>
         </div>
       </section>
