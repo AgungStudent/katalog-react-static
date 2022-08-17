@@ -16,9 +16,9 @@ export default function AboutPage(props) {
           backgroundPosition: "center",
         }}
       >
-        <div className="px-4 py-5 my-5 text-center">
+        <div className="px-4 py-5 text-center">
           <img
-            className="d-block mx-auto mb-4"
+            className="d-block mx-auto mb-4 mt-5"
             src="/assets/img/sidomulyo2.png"
             alt=""
           />
