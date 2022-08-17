@@ -5,7 +5,7 @@ export default function Navbar() {
   const pathName = window.location.pathname
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-light fixed-top py-3 backdrop"
+      className="navbar navbar-expand-lg navbar-light fixed-top py-3 backdrop bg-white"
       data-navbar-on-scroll="data-navbar-on-scroll"
     >
       <div className="container">
@@ -23,7 +23,7 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div
-          className="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0"
+          className="collapse navbar-collapse border-lg-0 mt-4 mt-lg-0"
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav ms-auto pt-2 pt-lg-0">
