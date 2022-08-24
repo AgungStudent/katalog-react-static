@@ -13,17 +13,17 @@ export default function Footer({ profileCompany, finishingMachine }) {
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <div className="me-5 d-none d-lg-block"></div>
 
-        <div>
-          <a href="" className="me-4 ">
+        <div className=''>
+          <a href="" className="me-4 text-white">
             <i className="fab fa-facebook-f"></i>
           </a>
-          <a href="" className="me-4 ">
+          <a href="" className="me-4 text-white">
             <i className="fab fa-twitter"></i>
           </a>
-          <a href="" className="me-4 ">
+          <a href="" className="me-4 text-white">
             <i className="fab fa-google"></i>
           </a>
-          <a href="" className="me-4 ">
+          <a href="" className="me-4 text-white">
             <i className="fab fa-instagram"></i>
           </a>
         </div>
@@ -58,10 +58,9 @@ export default function Footer({ profileCompany, finishingMachine }) {
         </div>
       </section>
       <div
-        className=" text-center p-4 text-dark fw-bold"
+        className=" text-center p-4 text-dark"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
       >
-        {" "}
         © Copyright {new Date().getFullYear()}{" "}
       </div>{" "}
     </footer>

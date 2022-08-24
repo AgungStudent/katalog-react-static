@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="manifest.json" />
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "favicon.ico" or "favicon.ico", "favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+
+    <!-- font awecome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="assets/css/theme.css" rel="stylesheet" />
+
+    <style>
+      html {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <link rel="stylesheet" href="dashobard.css" />
+
+    <!-- AOS -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>React App</title>
+    <script defer="" src="static/js/bundle.js"></script>
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap);
+    </style>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins" -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+          "Helvetica Neue", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+          monospace;
+      }
+
+      /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFDRSxTQUFTO0VBQ1Q7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0FBQ3BDOztBQUVBO0VBQ0U7YUFDVztBQUNiIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9UG9wcGluczp3Z2h0QDMwMDs0MDA7NTAwOzYwMCZkaXNwbGF5PXN3YXAnKTtcclxuYm9keSB7XHJcbiAgbWFyZ2luOiAwO1xyXG4gIGZvbnQtZmFtaWx5OiAnUG9wcGlucycgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCAnUm9ib3RvJywgJ094eWdlbicsXHJcbiAgICAnVWJ1bnR1JywgJ0NhbnRhcmVsbCcsICdGaXJhIFNhbnMnLCAnRHJvaWQgU2FucycsICdIZWx2ZXRpY2EgTmV1ZScsXHJcbiAgICBzYW5zLXNlcmlmO1xyXG4gIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkO1xyXG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XHJcbn1cclxuXHJcbmNvZGUge1xyXG4gIGZvbnQtZmFtaWx5OiBzb3VyY2UtY29kZS1wcm8sIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnQ291cmllciBOZXcnLFxyXG4gICAgbW9ub3NwYWNlO1xyXG59XHJcbiJdLCJzb3VyY2VSb290IjoiIn0= */
+    </style>
+    <style>
+      .section {
+        padding: 0;
+        position: relative;
+      }
+      .gray-bg {
+        background-color: #f5f5f5;
+      }
+      img {
+        max-width: 100%;
+      }
+      img {
+        vertical-align: middle;
+        border-style: none;
+      }
+      /* About Me 
+---------------------*/
+      .about-text h3 {
+        font-size: 45px;
+        font-weight: 700;
+        margin: 0 0 6px;
+      }
+      @media (max-width: 767px) {
+        .about-text h3 {
+          font-size: 35px;
+        }
+      }
+      .about-text h6 {
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+      @media (max-width: 767px) {
+        .about-text h6 {
+          font-size: 18px;
+        }
+      }
+      .about-text p {
+        font-size: 18px;
+        max-width: 450px;
+      }
+      .about-text p mark {
+        font-weight: 600;
+        color: #20247b;
+      }
+
+      .about-list {
+        padding-top: 10px;
+      }
+      .about-list .media {
+        padding: 5px 0;
+      }
+      .about-list label {
+        color: #20247b;
+        font-weight: 600;
+        width: 88px;
+        margin: 0;
+        position: relative;
+      }
+      .about-list label:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 11px;
+        width: 1px;
+        height: 12px;
+        background: #20247b;
+        transform: rotate(15deg);
+        margin: auto;
+        opacity: 0.5;
+      }
+      .about-list p {
+        margin: 0;
+        font-size: 15px;
+      }
+
+      @media (max-width: 991px) {
+        .about-avatar {
+          margin-top: 30px;
+        }
+      }
+
+      .about-section .counter {
+        padding: 22px 20px;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+      }
+      .about-section .counter .count-data {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .about-section .counter .count {
+        font-weight: 700;
+        color: #20247b;
+        margin: 0 0 5px;
+      }
+      .about-section .counter p {
+        font-weight: 600;
+        margin: 0;
+      }
+      mark {
+        background-image: linear-gradient(
+          rgba(252, 83, 86, 0.6),
+          rgba(252, 83, 86, 0.6)
+        );
+        background-size: 100% 3px;
+        background-repeat: no-repeat;
+        background-position: 0 bottom;
+        background-color: transparent;
+        padding: 0;
+        color: currentColor;
+      }
+      .theme-color {
+        color: #fc5356;
+      }
+      .dark-color {
+        color: #20247b;
+      }
+
+      /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jc3MvYWJvdXQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtJQUNWLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0kseUJBQXlCO0FBQzdCO0FBQ0E7SUFDSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxzQkFBc0I7SUFDdEIsa0JBQWtCO0FBQ3RCO0FBQ0E7c0JBQ3NCO0FBQ3RCO0VBQ0UsZUFBZTtFQUNmLGdCQUFnQjtFQUNoQixlQUFlO0FBQ2pCO0FBQ0E7RUFDRTtJQUNFLGVBQWU7RUFDakI7QUFDRjtBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLG1CQUFtQjtBQUNyQjtBQUNBO0VBQ0U7SUFDRSxlQUFlO0VBQ2pCO0FBQ0Y7QUFDQTtFQUNFLGVBQWU7RUFDZixnQkFBZ0I7QUFDbEI7QUFDQTtFQUNFLGdCQUFnQjtFQUNoQixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsaUJBQWlCO0FBQ25CO0FBQ0E7RUFDRSxjQUFjO0FBQ2hCO0FBQ0E7RUFDRSxjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLFdBQVc7RUFDWCxTQUFTO0VBQ1Qsa0JBQWtCO0FBQ3BCO0FBQ0E7RUFDRSxXQUFXO0VBQ1gsa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixTQUFTO0VBQ1QsV0FBVztFQUNYLFVBQVU7RUFDVixZQUFZO0VBQ1osbUJBQW1CO0VBS25CLHdCQUF3QjtFQUN4QixZQUFZO0VBQ1osWUFBWTtBQUNkO0FBQ0E7RUFDRSxTQUFTO0VBQ1QsZUFBZTtBQUNqQjs7QUFFQTtFQUNFO0lBQ0UsZ0JBQWdCO0VBQ2xCO0FBQ0Y7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQiw0Q0FBNEM7QUFDOUM7QUFDQTtFQUNFLGdCQUFnQjtFQUNoQixtQkFBbUI7QUFDckI7QUFDQTtFQUNFLGdCQUFnQjtFQUNoQixjQUFjO0VBQ2QsZUFBZTtBQUNqQjtBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLFNBQVM7QUFDWDtBQUNBO0lBQ0ksaUZBQWlGO0lBQ2pGLHlCQUF5QjtJQUN6Qiw0QkFBNEI7SUFDNUIsNkJBQTZCO0lBQzdCLDZCQUE2QjtJQUM3QixVQUFVO0lBQ1YsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxjQUFjO0FBQ2xCIiwic291cmNlc0NvbnRlbnQiOlsiLnNlY3Rpb24ge1xyXG4gICAgcGFkZGluZzogMDtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxufVxyXG4uZ3JheS1iZyB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjVmNWY1O1xyXG59XHJcbmltZyB7XHJcbiAgICBtYXgtd2lkdGg6IDEwMCU7XHJcbn1cclxuaW1nIHtcclxuICAgIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XHJcbiAgICBib3JkZXItc3R5bGU6IG5vbmU7XHJcbn1cclxuLyogQWJvdXQgTWUgXHJcbi0tLS0tLS0tLS0tLS0tLS0tLS0tLSovXHJcbi5hYm91dC10ZXh0IGgzIHtcclxuICBmb250LXNpemU6IDQ1cHg7XHJcbiAgZm9udC13ZWlnaHQ6IDcwMDtcclxuICBtYXJnaW46IDAgMCA2cHg7XHJcbn1cclxuQG1lZGlhIChtYXgtd2lkdGg6IDc2N3B4KSB7XHJcbiAgLmFib3V0LXRleHQgaDMge1xyXG4gICAgZm9udC1zaXplOiAzNXB4O1xyXG4gIH1cclxufVxyXG4uYWJvdXQtdGV4dCBoNiB7XHJcbiAgZm9udC13ZWlnaHQ6IDYwMDtcclxuICBtYXJnaW4tYm90dG9tOiAxNXB4O1xyXG59XHJcbkBtZWRpYSAobWF4LXdpZHRoOiA3NjdweCkge1xyXG4gIC5hYm91dC10ZXh0IGg2IHtcclxuICAgIGZvbnQtc2l6ZTogMThweDtcclxuICB9XHJcbn1cclxuLmFib3V0LXRleHQgcCB7XHJcbiAgZm9udC1zaXplOiAxOHB4O1xyXG4gIG1heC13aWR0aDogNDUwcHg7XHJcbn1cclxuLmFib3V0LXRleHQgcCBtYXJrIHtcclxuICBmb250LXdlaWdodDogNjAwO1xyXG4gIGNvbG9yOiAjMjAyNDdiO1xyXG59XHJcblxyXG4uYWJvdXQtbGlzdCB7XHJcbiAgcGFkZGluZy10b3A6IDEwcHg7XHJcbn1cclxuLmFib3V0LWxpc3QgLm1lZGlhIHtcclxuICBwYWRkaW5nOiA1cHggMDtcclxufVxyXG4uYWJvdXQtbGlzdCBsYWJlbCB7XHJcbiAgY29sb3I6ICMyMDI0N2I7XHJcbiAgZm9udC13ZWlnaHQ6IDYwMDtcclxuICB3aWR0aDogODhweDtcclxuICBtYXJnaW46IDA7XHJcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG59XHJcbi5hYm91dC1saXN0IGxhYmVsOmFmdGVyIHtcclxuICBjb250ZW50OiBcIlwiO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDA7XHJcbiAgYm90dG9tOiAwO1xyXG4gIHJpZ2h0OiAxMXB4O1xyXG4gIHdpZHRoOiAxcHg7XHJcbiAgaGVpZ2h0OiAxMnB4O1xyXG4gIGJhY2tncm91bmQ6ICMyMDI0N2I7XHJcbiAgLW1vei10cmFuc2Zvcm06IHJvdGF0ZSgxNWRlZyk7XHJcbiAgLW8tdHJhbnNmb3JtOiByb3RhdGUoMTVkZWcpO1xyXG4gIC1tcy10cmFuc2Zvcm06IHJvdGF0ZSgxNWRlZyk7XHJcbiAgLXdlYmtpdC10cmFuc2Zvcm06IHJvdGF0ZSgxNWRlZyk7XHJcbiAgdHJhbnNmb3JtOiByb3RhdGUoMTVkZWcpO1xyXG4gIG1hcmdpbjogYXV0bztcclxuICBvcGFjaXR5OiAwLjU7XHJcbn1cclxuLmFib3V0LWxpc3QgcCB7XHJcbiAgbWFyZ2luOiAwO1xyXG4gIGZvbnQtc2l6ZTogMTVweDtcclxufVxyXG5cclxuQG1lZGlhIChtYXgtd2lkdGg6IDk5MXB4KSB7XHJcbiAgLmFib3V0LWF2YXRhciB7XHJcbiAgICBtYXJnaW4tdG9wOiAzMHB4O1xyXG4gIH1cclxufVxyXG5cclxuLmFib3V0LXNlY3Rpb24gLmNvdW50ZXIge1xyXG4gIHBhZGRpbmc6IDIycHggMjBweDtcclxuICBiYWNrZ3JvdW5kOiAjZmZmZmZmO1xyXG4gIGJvcmRlci1yYWRpdXM6IDEwcHg7XHJcbiAgYm94LXNoYWRvdzogMCAwIDMwcHggcmdiYSgzMSwgNDUsIDYxLCAwLjEyNSk7XHJcbn1cclxuLmFib3V0LXNlY3Rpb24gLmNvdW50ZXIgLmNvdW50LWRhdGEge1xyXG4gIG1hcmdpbi10b3A6IDEwcHg7XHJcbiAgbWFyZ2luLWJvdHRvbTogMTBweDtcclxufVxyXG4uYWJvdXQtc2VjdGlvbiAuY291bnRlciAuY291bnQge1xyXG4gIGZvbnQtd2VpZ2h0OiA3MDA7XHJcbiAgY29sb3I6ICMyMDI0N2I7XHJcbiAgbWFyZ2luOiAwIDAgNXB4O1xyXG59XHJcbi5hYm91dC1zZWN0aW9uIC5jb3VudGVyIHAge1xyXG4gIGZvbnQtd2VpZ2h0OiA2MDA7XHJcbiAgbWFyZ2luOiAwO1xyXG59XHJcbm1hcmsge1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTogbGluZWFyLWdyYWRpZW50KHJnYmEoMjUyLCA4MywgODYsIDAuNiksIHJnYmEoMjUyLCA4MywgODYsIDAuNikpO1xyXG4gICAgYmFja2dyb3VuZC1zaXplOiAxMDAlIDNweDtcclxuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XHJcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiAwIGJvdHRvbTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50O1xyXG4gICAgcGFkZGluZzogMDtcclxuICAgIGNvbG9yOiBjdXJyZW50Q29sb3I7XHJcbn1cclxuLnRoZW1lLWNvbG9yIHtcclxuICAgIGNvbG9yOiAjZmM1MzU2O1xyXG59XHJcbi5kYXJrLWNvbG9yIHtcclxuICAgIGNvbG9yOiAjMjAyNDdiO1xyXG59XHJcbiJdLCJzb3VyY2VSb290IjoiIn0= */
+    </style>
+  </head>
+  <body data-aos-easing="ease" data-aos-duration="3000" data-aos-delay="0">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <main class="main">
+        <nav
+          class="navbar navbar-expand-lg navbar-light py-3 backdrop"
+          data-navbar-on-scroll="data-navbar-on-scroll"
+          style="
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            z-index: 1;
+          "
+        >
+          <div class="container">
+            <img
+              src="assets/img/sidomulyo2.png"
+              class="image-logo"
+              alt=""
+            /><button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse border-lg-0 mt-4 mt-lg-0"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
+                <li class="nav-item px-2">
+                  <a class="nav-link fw-medium active" href="">Home</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link fw-medium active" href="about"
+                    >Tentang Kami</a
+                  >
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link fw-medium active" href="products"
+                    >Produk</a
+                  >
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link fw-medium active" href="clients"
+                    >Klein Kami</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div
+          style="
+            background-image: url('/assets/img/bg2.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center center;
+          "
+        >
+          <div class="px-4 py-5 text-center">
+            <img
+              class="d-block mx-auto mb-4 mt-5"
+              src="assets/img/sidomulyo2.png"
+              alt=""
+            />
+            <h1 class="display-5 fw-bold text-shadow">Tentang Kami</h1>
+            <div class="col-lg-6 mx-auto shadow-sm p-4">
+              <p class="lead mb-4">
+                Sidomulyo Advertising adalah salah satu perusahaan yang bergerak
+                di bidang layanan jasa digital printing&amp;Advertising dengan
+                didukung oleh mesin-mesin tercanggih dan terbaru,serta
+                management SDM yg profesional.
+              </p>
+              <p class="lead mb-4">
+                Berdiri pada tanggal 12 November 2020 dengan nama Sidomulyo,
+                perusahaan ini memulai usaha dibidang Advertising. Seiring
+                dengan berjalannya waktu serta permintaan konsumen, dengan
+                mempelajari, memahami, memperbaiki, dan meningkatkan layanan
+                serta kualitas produksi menjadi lebih baik.sekarang menambah
+                layanan ke digital printing &amp; Event.
+              </p>
+            </div>
+          </div>
+          <section class="section about-section" id="about">
+            <div class="container p-2">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="about-avatar">
+                    <img
+                      src="assets/img/company-icon.jpg"
+                      width="100%"
+                      title=""
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="about-text go-to ms-2 mb-4">
+                    <h3 class="dark-color">Profile Perusahaan</h3>
+                    <h6 class="theme-color lead mb-2">Sidomulyo Advertising</h6>
+                    <hr />
+                    <div class="row about-list">
+                      <div class="col-md-6">
+                        <div class="d-block">
+                          <div
+                            class="media d-inline-flex justify-content-evenly d-sm-block"
+                          >
+                            <label>Alamat</label>
+                            <p>Jl. Kartini PR 11 No 108 Selasar Salatiga</p>
+                          </div>
+                        </div>
+                        <div class="d-block">
+                          <div
+                            class="media d-inline-flex justify-content-evenly d-sm-block"
+                          >
+                            <label>Telepon</label>
+                            <p>+6288808888880</p>
+                          </div>
+                        </div>
+                        <div class="d-block">
+                          <div
+                            class="media d-inline-flex justify-content-evenly d-sm-block"
+                          >
+                            <label>Email</label>
+                            <p>sidocvmulyo@gmail.com</p>
+                          </div>
+                        </div>
+                        <div class="d-block">
+                          <div
+                            class="media d-inline-flex justify-content-evenly d-sm-block"
+                          >
+                            <label>Bidang</label>
+                            <p>Advertising Agency</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="d-block">
+                          <div
+                            class="media d-inline-flex justify-content-evenly d-sm-block"
+                          >
+                            <label>Akte Pendirian</label>
+                            <p>12 November 2020</p>
+                          </div>
+                        </div>
+                        <div class="d-block">
+                          <div
+                            class="media d-inline-flex justify-content-evenly d-sm-block"
+                          >
+                            <label>Notaris</label>
+                            <p>Susi Haryati, SH., M.KN.</p>
+                          </div>
+                        </div>
+                        <div class="d-block">
+                          <div
+                            class="media d-inline-flex justify-content-evenly d-sm-block"
+                          >
+                            <label>NIB</label>
+                            <p>0244010152804</p>
+                          </div>
+                        </div>
+                        <div class="d-block">
+                          <div
+                            class="media d-inline-flex justify-content-evenly d-sm-block"
+                          >
+                            <label>NPWP</label>
+                            <p>96.571.368.8-505.000</p>
+                          </div>
+                        </div>
+                        <div class="d-block">
+                          <div
+                            class="media d-inline-flex justify-content-evenly d-sm-block"
+                          >
+                            <label>Director</label>
+                            <p>Joshua Franco Wibowo</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="row justify-content-center"></div>
+            <div class="container">
+              <div class="row flex-center">
+                <div class="col-md-5 order-md-1 text-center text-md-end">
+                  <img
+                    class="img-fluid mb-4"
+                    src="assets/img/illustrations/printing4.jpg"
+                    width="450"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-5 text-center text-md-start">
+                  <h6 class="fw-bold fs-2 fs-lg-3 display-3 lh-sm"></h6>
+                  <p class="my-4 pe-xl-8"></p>
+                  <p class="my-4 pe-xl-8">
+                    Merupakan salah satu perusahaan yang bergerak di bidang
+                    layanan jasa digital printing&amp;Advertising dengan
+                    didukung oleh mesin-mesin tercanggih dan terbaru,serta
+                    management SDM yg profesional
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="py-5" id="visi-misi">
+              <div class="container">
+                <div class="mx-4 row text-sm-start">
+                  <div
+                    class="col-md-5 shadow-transition order-md-0 text-center text-md-start pt-3"
+                  >
+                    <h6 class="fw-bold fs-1 fs-lg-3 display-3 lh-sm">Visi</h6>
+                    <p class="my-4 pe-xl-8">
+                      Sebagai Problem Solving dan memberikan solusi tentang
+                      strategi beriklan yang efektif dan efisien
+                    </p>
+                  </div>
+                  <div class="col-md-1"><hr class="hr-line" /></div>
+                  <div
+                    class="col-md-6 shadow-transition text-center text-md-start pt-3"
+                  >
+                    <h6 class="fw-bold fs-1 fs-lg-3 display-3 lh-sm">Misi</h6>
+                    <ol class="text-start">
+                      <li>
+                        Memberikan dan membuat hasil/karya iklan yang terbaik
+                      </li>
+                      <li>Meningkatkan Pelayanan dibidang Advertising</li>
+                      <li>
+                        Mengembangkan SDM dan Ethos Kerja Perusahaan yang
+                        berkinerja tinggi
+                      </li>
+                      <li>
+                        Integritas yang dapat diandalkan dan menjadi pribadi
+                        yang kreatif
+                      </li>
+                      <li>
+                        Menjalin kerja sama yang saling menguntungkan dengan
+                        Mitra Usaha
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <footer
+          class="text-center text-lg-start text-muted text-dark bg-primary-gradient"
+          id="contact"
+          style="position: absolute; left: 0px; right: 0px"
+        >
+          <section
+            class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+          >
+            <div class="me-5 d-none d-lg-block"></div>
+            <div class="">
+              <a href="" class="me-4 text-white"
+                ><i class="fab fa-facebook-f"></i></a
+              ><a href="" class="me-4 text-white"
+                ><i class="fab fa-twitter"></i></a
+              ><a href="" class="me-4 text-white"
+                ><i class="fab fa-google"></i></a
+              ><a href="" class="me-4 text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </section>
+          <section class="py-0 bg-primary-gradient">
+            <div
+              class="bg-holder"
+              style="
+                background-image: url('assets/img/illustrations/footer-bg.png');
+                background-position: center bottom;
+                background-size: cover;
+              "
+            ></div>
+            <div class="container">
+              <div class="row justify-content-lg-between pt-5">
+                <div
+                  class="col-6 col-sm-4 col-lg-auto mb-3"
+                  style="text-align: left"
+                >
+                  <h5 class="mb-5 text-white text-uppercase">
+                    Finishing Machine
+                  </h5>
+                  <ul class="list-unstyled mb-md-4 mb-lg-0">
+                    <li class="mb-3">
+                      <a class="text-light text-decoration-none"
+                        >Mesin Shimming FR900</a
+                      >
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-light text-decoration-none"
+                        >Mesin Cannon IR5000i</a
+                      >
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-light text-decoration-none"
+                        >Mesin Shimming FR-800PH</a
+                      >
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-light text-decoration-none"
+                        >Paper Trimmer</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="col-6 col-sm-4 col-lg-auto mb-3"
+                  style="text-align: left"
+                >
+                  <h5 class="mb-5 text-white text-uppercase">Kontak</h5>
+                  <ul class="list-unstyled mb-md-4 mb-lg-0">
+                    <li class="mb-3">
+                      <a class="text-light text-decoration-none"
+                        ><i class="fas fa-home me-3"></i>Jl. Kartini PR 11 No
+                        108 Selasar Salatiga</a
+                      >
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-light text-decoration-none"
+                        ><i class="fas fa-phone me-3"></i>+6288808888880</a
+                      >
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-light text-decoration-none"
+                        ><i class="fas fa-envelope me-3"></i
+                        >sidocvmulyo@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="col-6 col-sm-4 col-lg-auto mb-3"
+                  style="text-align: left"
+                >
+                  <h5 class="mb-5 text-white text-uppercase"></h5>
+                  <ul class="list-unstyled mb-md-4 mb-lg-0"></ul>
+                </div>
+                <div
+                  class="col-6 col-sm-4 col-lg-auto mb-3"
+                  style="text-align: left"
+                >
+                  <h5 class="mb-5 text-white text-uppercase"></h5>
+                  <ul class="list-unstyled mb-md-4 mb-lg-0"></ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div
+            class="text-center p-4 text-dark"
+            style="background-color: rgba(0, 0, 0, 0.05)"
+          >
+            © Copyright 2022
+          </div>
+        </footer>
+        <a
+          href="https://api.whatsapp.com/send?phone=+6288808888880&amp;text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+          class="float"
+          target="_blank"
+          ><i class="fa-brands fa-whatsapp my-float"></i
+        ></a>
+      </main>
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script>
+      AOS.refresh()
+      AOS.init({
+        once: true,
+        duration: 3000,
+      })
+    </script>
+  </body>
+</html>

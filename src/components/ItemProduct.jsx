@@ -17,7 +17,7 @@ export default function ItemProduct({
         <div className="text-center">
           <Link to="/detail/1">
             <img
-              className="image-zoom rounded img-thumbnail"
+              className="image-zoom rounded"
               src={image}
               width="90%"
               alt=""
@@ -27,7 +27,7 @@ export default function ItemProduct({
             <h6 className="fw-bold fs-1 heading-color">{title}</h6>
             <p className="mb-0 card-text text-left">{description}</p>
             {isProduct ? (
-              <div className="mt-3 shadow">
+              <div className="mt-3">
                 <Link
                   to="/detail/1"
                   className="text-center p-2 d-block btn btn-outline-primary"

@@ -25,7 +25,6 @@ export default function DetailPage() {
               </p>
 
               <a href="" className="btn btn-success">
-                {" "}
                 <i className="fa-brands fa-whatsapp"></i> Pesan
               </a>
             </div>

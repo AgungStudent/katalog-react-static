@@ -34,7 +34,7 @@ export default function Navbar() {
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav ms-auto pt-2 pt-lg-0">
-            <ListNavbar link="/" content="Landing Page" />
+            <ListNavbar link="/" content="Home" />
             <ListNavbar link="/about" content="Tentang Kami" />
             <ListNavbar link="/products" content="Produk" />
             <ListNavbar link="/clients" content="Klein Kami" />

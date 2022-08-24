@@ -18,6 +18,7 @@ export default function FinishingMachine() {
             </div>
           </div>
           <div className="row h-100">
+
             <ItemProduct
               image="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/belt.webp"
               lgContent="4"

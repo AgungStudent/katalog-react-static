@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="manifest.json" />
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "favicon.ico" or "favicon.ico", "favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+
+    <!-- font awecome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="assets/css/theme.css" rel="stylesheet" />
+
+    <style>
+      html {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <link rel="stylesheet" href="dashobard.css" />
+
+    <!-- AOS -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>React App</title>
+    <script defer="" src="static/js/bundle.js"></script>
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap);
+    </style>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins" -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+          "Helvetica Neue", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+          monospace;
+      }
+
+      /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFDRSxTQUFTO0VBQ1Q7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0FBQ3BDOztBQUVBO0VBQ0U7YUFDVztBQUNiIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9UG9wcGluczp3Z2h0QDMwMDs0MDA7NTAwOzYwMCZkaXNwbGF5PXN3YXAnKTtcclxuYm9keSB7XHJcbiAgbWFyZ2luOiAwO1xyXG4gIGZvbnQtZmFtaWx5OiAnUG9wcGlucycgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCAnUm9ib3RvJywgJ094eWdlbicsXHJcbiAgICAnVWJ1bnR1JywgJ0NhbnRhcmVsbCcsICdGaXJhIFNhbnMnLCAnRHJvaWQgU2FucycsICdIZWx2ZXRpY2EgTmV1ZScsXHJcbiAgICBzYW5zLXNlcmlmO1xyXG4gIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkO1xyXG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XHJcbn1cclxuXHJcbmNvZGUge1xyXG4gIGZvbnQtZmFtaWx5OiBzb3VyY2UtY29kZS1wcm8sIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnQ291cmllciBOZXcnLFxyXG4gICAgbW9ub3NwYWNlO1xyXG59XHJcbiJdLCJzb3VyY2VSb290IjoiIn0= */
+    </style>
+    <style>
+      .section {
+        padding: 0;
+        position: relative;
+      }
+      .gray-bg {
+        background-color: #f5f5f5;
+      }
+      img {
+        max-width: 100%;
+      }
+      img {
+        vertical-align: middle;
+        border-style: none;
+      }
+      /* About Me 
+---------------------*/
+      .about-text h3 {
+        font-size: 45px;
+        font-weight: 700;
+        margin: 0 0 6px;
+      }
+      @media (max-width: 767px) {
+        .about-text h3 {
+          font-size: 35px;
+        }
+      }
+      .about-text h6 {
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+      @media (max-width: 767px) {
+        .about-text h6 {
+          font-size: 18px;
+        }
+      }
+      .about-text p {
+        font-size: 18px;
+        max-width: 450px;
+      }
+      .about-text p mark {
+        font-weight: 600;
+        color: #20247b;
+      }
+
+      .about-list {
+        padding-top: 10px;
+      }
+      .about-list .media {
+        padding: 5px 0;
+      }
+      .about-list label {
+        color: #20247b;
+        font-weight: 600;
+        width: 88px;
+        margin: 0;
+        position: relative;
+      }
+      .about-list label:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 11px;
+        width: 1px;
+        height: 12px;
+        background: #20247b;
+        transform: rotate(15deg);
+        margin: auto;
+        opacity: 0.5;
+      }
+      .about-list p {
+        margin: 0;
+        font-size: 15px;
+      }
+
+      @media (max-width: 991px) {
+        .about-avatar {
+          margin-top: 30px;
+        }
+      }
+
+      .about-section .counter {
+        padding: 22px 20px;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+      }
+      .about-section .counter .count-data {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .about-section .counter .count {
+        font-weight: 700;
+        color: #20247b;
+        margin: 0 0 5px;
+      }
+      .about-section .counter p {
+        font-weight: 600;
+        margin: 0;
+      }
+      mark {
+        background-image: linear-gradient(
+          rgba(252, 83, 86, 0.6),
+          rgba(252, 83, 86, 0.6)
+        );
+        background-size: 100% 3px;
+        background-repeat: no-repeat;
+        background-position: 0 bottom;
+        background-color: transparent;
+        padding: 0;
+        color: currentColor;
+      }
+      .theme-color {
+        color: #fc5356;
+      }
+      .dark-color {
+        color: #20247b;
+      }
+
+    </style>
+  </head>
+  <body data-aos-easing="ease" data-aos-duration="3000" data-aos-delay="0">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <main class="main">
+        <nav
+          class="navbar navbar-expand-lg navbar-light py-3 backdrop"
+          data-navbar-on-scroll="data-navbar-on-scroll"
+          style="
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            z-index: 1;
+          "
+        >
+          <div class="container">
+            <img
+              src="assets/img/sidomulyo2.png"
+              class="image-logo"
+              alt=""
+            /><button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse border-lg-0 mt-4 mt-lg-0"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
+                <li class="nav-item px-2">
+                  <a class="nav-link fw-medium active" href="">Home</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link fw-medium active" href="about"
+                    >Tentang Kami</a
+                  >
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link fw-medium active" href="products"
+                    >Produk</a
+                  >
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link fw-medium active" href="clients"
+                    >Klein Kami</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div
+          style="
+            background-image: url('/assets/img/background.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+          "
+        >
+          <div>
+            <div></div>
+            <div class="container" id="product" style="padding-top: 10vh">
+              <div class="row justify-content-center">
+                <div class="col-md-9 col-lg-6 text-center mb-3">
+                  <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">Daftar Klein</h5>
+                  <hr class="" />
+                </div>
+              </div>
+              <div class="row flex-center h-100">
+                <div class="col-11 col-xl-4 p-3">
+                  <img
+                    src="assets/img/mitra/mitra0.jpg"
+                    alt=""
+                    class="image-zoom shadow-transition"
+                    width="300"
+                    height="150"
+                  />
+                </div>
+                <div class="col-11 col-xl-4 p-3">
+                  <img
+                    src="assets/img/mitra/mitra1.jpg"
+                    alt=""
+                    class="image-zoom shadow-transition"
+                    width="300"
+                    height="150"
+                  />
+                </div>
+                <div class="col-11 col-xl-4 p-3">
+                  <img
+                    src="assets/img/mitra/mitra2.jpg"
+                    alt=""
+                    class="image-zoom shadow-transition"
+                    width="300"
+                    height="150"
+                  />
+                </div>
+                <div class="col-11 col-xl-4 p-3">
+                  <img
+                    src="assets/img/mitra/mitra3.jpg"
+                    alt=""
+                    class="image-zoom shadow-transition"
+                    width="300"
+                    height="150"
+                  />
+                </div>
+                <div class="col-11 col-xl-4 p-3">
+                  <img
+                    src="assets/img/mitra/mitra4.jpg"
+                    alt=""
+                    class="image-zoom shadow-transition"
+                    width="300"
+                    height="150"
+                  />
+                </div>
+                <div class="col-11 col-xl-4 p-3">
+                  <img
+                    src="assets/img/mitra/mitra5.jpg"
+                    alt=""
+                    class="image-zoom shadow-transition"
+                    width="300"
+                    height="150"
+                  />
+                </div>
+                <div class="col-11 col-xl-4 p-3">
+                  <img
+                    src="assets/img/mitra/mitra6.jpg"
+                    alt=""
+                    class="image-zoom shadow-transition"
+                    width="300"
+                    height="150"
+                  />
+                </div>
+                <div class="col-11 col-xl-4 p-3">
+                  <img
+                    src="assets/img/mitra/mitra7.jpg"
+                    alt=""
+                    class="image-zoom shadow-transition"
+                    width="300"
+                    height="150"
+                  />
+                </div>
+                <div class="col-11 col-xl-4 p-3">
+                  <img
+                    src="assets/img/mitra/mitra8.jpg"
+                    alt=""
+                    class="image-zoom shadow-transition"
+                    width="300"
+                    height="150"
+                  />
+                </div>
+                <div class="col-11 col-xl-4 p-3">
+                  <img
+                    src="assets/img/mitra/mitra9.jpg"
+                    alt=""
+                    class="image-zoom shadow-transition"
+                    width="300"
+                    height="150"
+                  />
+                </div>
+                <div class="col-11 col-xl-4 p-3">
+                  <img
+                    src="assets/img/mitra/mitra10.jpg"
+                    alt=""
+                    class="image-zoom shadow-transition"
+                    width="300"
+                    height="150"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer
+          class="text-center text-lg-start text-muted text-dark bg-primary-gradient"
+          id="contact"
+          style="position: absolute; left: 0px; right: 0px"
+        >
+          <section
+            class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+          >
+            <div class="me-5 d-none d-lg-block"></div>
+            <div class="">
+              <a href="" class="me-4 text-white"
+                ><i class="fab fa-facebook-f"></i></a
+              ><a href="" class="me-4 text-white"
+                ><i class="fab fa-twitter"></i></a
+              ><a href="" class="me-4 text-white"
+                ><i class="fab fa-google"></i></a
+              ><a href="" class="me-4 text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </section>
+          <section class="py-0 bg-primary-gradient">
+            <div
+              class="bg-holder"
+              style="
+                background-image: url('assets/img/illustrations/footer-bg.png');
+                background-position: center bottom;
+                background-size: cover;
+              "
+            ></div>
+            <div class="container">
+              <div class="row justify-content-lg-between pt-5">
+                <div
+                  class="col-6 col-sm-4 col-lg-auto mb-3"
+                  style="text-align: left"
+                >
+                  <h5 class="mb-5 text-white text-uppercase">
+                    Finishing Machine
+                  </h5>
+                  <ul class="list-unstyled mb-md-4 mb-lg-0">
+                    <li class="mb-3">
+                      <a class="text-light text-decoration-none"
+                        >Mesin Shimming FR900</a
+                      >
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-light text-decoration-none"
+                        >Mesin Cannon IR5000i</a
+                      >
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-light text-decoration-none"
+                        >Mesin Shimming FR-800PH</a
+                      >
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-light text-decoration-none"
+                        >Paper Trimmer</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="col-6 col-sm-4 col-lg-auto mb-3"
+                  style="text-align: left"
+                >
+                  <h5 class="mb-5 text-white text-uppercase">Kontak</h5>
+                  <ul class="list-unstyled mb-md-4 mb-lg-0">
+                    <li class="mb-3">
+                      <a class="text-light text-decoration-none"
+                        ><i class="fas fa-home me-3"></i>Jl. Kartini PR 11 No
+                        108 Selasar Salatiga</a
+                      >
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-light text-decoration-none"
+                        ><i class="fas fa-phone me-3"></i>+6288808888880</a
+                      >
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-light text-decoration-none"
+                        ><i class="fas fa-envelope me-3"></i
+                        >sidocvmulyo@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="col-6 col-sm-4 col-lg-auto mb-3"
+                  style="text-align: left"
+                >
+                  <h5 class="mb-5 text-white text-uppercase"></h5>
+                  <ul class="list-unstyled mb-md-4 mb-lg-0"></ul>
+                </div>
+                <div
+                  class="col-6 col-sm-4 col-lg-auto mb-3"
+                  style="text-align: left"
+                >
+                  <h5 class="mb-5 text-white text-uppercase"></h5>
+                  <ul class="list-unstyled mb-md-4 mb-lg-0"></ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div
+            class="text-center p-4 text-dark"
+            style="background-color: rgba(0, 0, 0, 0.05)"
+          >
+            © Copyright 2022
+          </div>
+        </footer>
+        <a
+          href="https://api.whatsapp.com/send?phone=+6288808888880&amp;text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+          class="float"
+          target="_blank"
+          ><i class="fa-brands fa-whatsapp my-float"></i
+        ></a>
+      </main>
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script>
+      AOS.refresh()
+      AOS.init({
+        once: true,
+        duration: 3000,
+      })
+    </script>
+  </body>
+</html>

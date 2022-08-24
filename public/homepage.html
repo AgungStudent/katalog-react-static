@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+
+    <!-- font awecome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="assets/css/theme.css" rel="stylesheet" />
+
+    <style>
+      html {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <link rel="stylesheet" href="dashobard.css" />
+
+    <!-- AOS -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>React App</title>
+  </head>
+  <body>
+    <main class="main">
+      <!-- nav -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light py-3 backdrop"
+        data-navbar-on-scroll="data-navbar-on-scroll" 
+                  style="
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            z-index: 1;
+          "
+      >
+        <div class="container">
+            <img
+              src="assets/img/sidomulyo2.png"
+              class="image-logo"
+              alt=""
+            /><button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div
+            class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
+              <!-- NAV LINK -->
+              <li class="nav-item px-2">
+                <a class="nav-link fw-medium active" href="">Home</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link fw-medium active" href="about"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link fw-medium active" href="products">Produk</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link fw-medium active" href="clients"
+                  >Klein Kami</a
+                >
+              </li>
+              <!-- NAV LINK -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- end nav -->
+      <!-- HEADER -->
+      <section
+        class="pb-0"
+        id="home"
+        style="
+          background-image: url('assets/img/illustrations/blurry-gradient-haikei.svg');
+          background-size: cover;
+        "
+      >
+        <div class="container">
+          <div class="row flex-center">
+            <div class="col-md-5 order-md-1 text-center text-md-end">
+              <img
+                class="img-fluid mb-4"
+                src="assets/img/illustrations/printing.svg"
+                width="450"
+                alt=""
+              />
+            </div>
+            <div class="col-md-5 text-center text-md-start">
+              <h6 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3 text-uppercase">
+                Sidomulyo Advertising
+              </h6>
+              <p class="my-4 pe-xl-6 text-dark">
+                Merupakan salah satu perusahaan yang bergerak di bidang layanan
+                jasa digital printing&amp;Advertising dengan didukung oleh
+                mesin-mesin tercanggih dan terbaru,serta management SDM yg
+                profesional
+              </p>
+              <a class="btn btn-primary rounded-pill px-3" href="about"
+                >Tentang Kami</a
+              >
+            </div>
+          </div>
+        </div>
+        <svg xmlns="assets/img/illustrations/wave.svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,32L60,80C120,128,240,224,360,229.3C480,235,600,149,720,133.3C840,117,960,171,1080,160C1200,149,1320,75,1380,37.3L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          ></path>
+        </svg>
+      </section>
+      <!-- END HEADER -->
+      <hr class="featurette-divider" />
+      <!-- VISI MISI -->
+      <div class="py-5" id="visi-misi">
+        <div class="container">
+          <div class="mx-4 row text-sm-start">
+            <div
+              class="col-md-5 shadow-transition order-md-0 text-center text-md-start pt-3"
+            >
+              <h6 class="fw-bold fs-1 fs-lg-3 display-3 lh-sm">Visi</h6>
+              <p class="my-4 pe-xl-8">
+                Sebagai Problem Solving dan memberikan solusi tentang strategi
+                beriklan yang efektif dan efisien
+              </p>
+            </div>
+            <div class="col-md-1"><hr class="hr-line" /></div>
+            <div
+              class="col-md-6 shadow-transition text-center text-md-start pt-3"
+            >
+              <h6 class="fw-bold fs-1 fs-lg-3 display-3 lh-sm">Misi</h6>
+              <ol class="text-start">
+                <li>Memberikan dan membuat hasil/karya iklan yang terbaik</li>
+                <li>Meningkatkan Pelayanan dibidang Advertising</li>
+                <li>
+                  Mengembangkan SDM dan Ethos Kerja Perusahaan yang berkinerja
+                  tinggi
+                </li>
+                <li>
+                  Integritas yang dapat diandalkan dan menjadi pribadi yang
+                  kreatif
+                </li>
+                <li>
+                  Menjalin kerja sama yang saling menguntungkan dengan Mitra
+                  Usaha
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END VISI MISI -->
+      <hr class="featurette-divider" />
+      <section>
+        <div class="container">
+          <div class="row flex-center">
+            <div class="col-md-5 order-md-0 text-center text-md-start">
+              <img
+                class="img-fluid mb-4"
+                src="assets/img/illustrations/printing2.jpg"
+                width="450"
+                alt=""
+              />
+            </div>
+            <div class="col-md-5 text-center text-md-start">
+              <h5 class="fw-bold fs-2 fs-lg-3 display-3 lh-sm">
+                Fasilitas dan<br />Mesin
+              </h5>
+              <p class="my-4 pe-xl-8">
+                CV.Sidomulyo Advertising didukung oleh mesin webprinting
+                teknologi terbaru, dengan kecepatan cetak yg yang mampu
+                merealisasikan proses pembuatan bermacam - macam produk dengan
+                ukuran bervariasi. Dan dibantu dengan SDM yang profesional.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="featurette-divider" />
+      <section class="py-8" style="background-color: rgb(247, 244, 244)">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-6 text-center mb-3">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">
+                Daftar Finishing Machine
+              </h5>
+              <h5 class="fw-light">
+                <a class="text-info" href="finishing-machine"
+                  >Lihat semua <i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+              </h5>
+            </div>
+          </div>
+          <div class="row h-100">
+            <div class="col-sm-6 col-lg-4 pb-lg-6 px-lg-4 pb-4">
+              <div class="card py-3 shadow-sm h-100">
+                <div class="text-center">
+                  <a href="detail/1"
+                    ><img
+                      class="image-zoom rounded"
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/belt.webp"
+                      width="90%"
+                      alt=""
+                  /></a>
+                  <div class="card-body px-2">
+                    <h6 class="fw-bold fs-1 heading-color">title</h6>
+                    <p class="mb-0 card-text text-left">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Sequi, nam fugit. Magni in corrupti quos ut esse dicta
+                      fugiat rerum nobis, sed vitae consequatur nisi sapiente
+                      rem officia tenetur minima?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 pb-lg-6 px-lg-4 pb-4">
+              <div class="card py-3 shadow-sm h-100">
+                <div class="text-center">
+                  <a href="detail/1"
+                    ><img
+                      class="image-zoom rounded"
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/belt.webp"
+                      width="90%"
+                      alt=""
+                  /></a>
+                  <div class="card-body px-2">
+                    <h6 class="fw-bold fs-1 heading-color">title</h6>
+                    <p class="mb-0 card-text text-left">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Sequi, nam fugit. Magni in corrupti quos ut esse dicta
+                      fugiat rerum nobis, sed vitae consequatur nisi sapiente
+                      rem officia tenetur minima?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 pb-lg-6 px-lg-4 pb-4">
+              <div class="card py-3 shadow-sm h-100">
+                <div class="text-center">
+                  <a href="detail/1"
+                    ><img
+                      class="image-zoom rounded"
+                      src="https://source.unsplash.com/user/c_v_r/1600x900"
+                      width="90%"
+                      alt=""
+                  /></a>
+                  <div class="card-body px-2">
+                    <h6 class="fw-bold fs-1 heading-color">title</h6>
+                    <p class="mb-0 card-text text-left">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Sequi, nam fugit. Magni in corrupti quos ut esse dicta
+                      fugiat rerum nobis, sed vitae consequatur nisi sapiente
+                      rem officia tenetur minima?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="featurette-divider" />
+
+      <!-- DAFTAR PRODUK -->
+      <div
+        class="mt-5"
+        style="
+          background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSI2MDU0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMjYzLjU0OCAyLjY3M0wtMTA3IDc5Mi44MDVWNzc0NWgxNjU1VjE1Ni45ODZMMTI4My42MTYgMi43MjZhMjAgMjAgMCAwIDAtMjAuMDY4LS4wNTN6IiBmaWxsPSIjRThFQUVEIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9Ii43Ii8+PC9zdmc+');
+        "
+      >
+        <div class="container" id="product">
+          <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-6 text-center mb-3">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">Daftar Produk</h5>
+              <h5 class="fw-light">
+                <a class="text-info" href="products"
+                  >Lihat semua <i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+              </h5>
+            </div>
+          </div>
+
+          <!-- LIST DAFTAR PRODUK -->
+          <div class="row flex-center h-100">
+            <div class="col-11 col-xl-10">
+              <div class="row">
+                <div class="col-sm-6 col-lg-4 pb-lg-6 px-lg-4 pb-4">
+                  <div class="card py-3 shadow-sm h-100 hover-top">
+                    <div class="text-center">
+                      <a href="detail/1"
+                        ><img
+                          class="image-zoom rounded"
+                          src="https://source.unsplash.com/user/c_v_r/1600x900"
+                          width="90%"
+                          alt=""
+                      /></a>
+                      <div class="card-body px-2">
+                        <h6 class="fw-bold fs-1 heading-color">Product 1</h6>
+                        <p class="mb-0 card-text text-left">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Consequuntur libero quo dolor asperiores
+                          distinctio suscipit? Veritatis aspernatur
+                        </p>
+                        <div class="mt-3">
+                          <a
+                            class="text-center p-2 d-block btn btn-outline-primary"
+                            href="detail/1"
+                            >Detail</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 pb-lg-6 px-lg-4 pb-4">
+                  <div class="card py-3 shadow-sm h-100 hover-top">
+                    <div class="text-center">
+                      <a href="detail/1"
+                        ><img
+                          class="image-zoom rounded"
+                          src="https://source.unsplash.com/user/c_v_r/1600x900"
+                          width="90%"
+                          alt=""
+                      /></a>
+                      <div class="card-body px-2">
+                        <h6 class="fw-bold fs-1 heading-color">Product 2</h6>
+                        <p class="mb-0 card-text text-left">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Consequuntur libero quo dolor asperiores
+                          distinctio suscipit? Veritatis aspernatur
+                        </p>
+                        <div class="mt-3">
+                          <a
+                            class="text-center p-2 d-block btn btn-outline-primary"
+                            href="detail/1"
+                            >Detail</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 pb-lg-6 px-lg-4 pb-4">
+                  <div class="card py-3 shadow-sm h-100 hover-top">
+                    <div class="text-center">
+                      <a href="detail/1"
+                        ><img
+                          class="image-zoom rounded"
+                          src="https://source.unsplash.com/user/c_v_r/1600x900"
+                          width="90%"
+                          alt=""
+                      /></a>
+                      <div class="card-body px-2">
+                        <h6 class="fw-bold fs-1 heading-color">Product 3</h6>
+                        <p class="mb-0 card-text text-left">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Consequuntur libero quo dolor asperiores
+                          distinctio suscipit? Veritatis aspernatur
+                        </p>
+                        <div class="mt-3">
+                          <a
+                            class="text-center p-2 d-block btn btn-outline-primary"
+                            href="detail/1"
+                            >Detail</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 pb-lg-6 px-lg-4 pb-4">
+                  <div class="card py-3 shadow-sm h-100 hover-top">
+                    <div class="text-center">
+                      <a href="detail/1"
+                        ><img
+                          class="image-zoom rounded"
+                          src="https://source.unsplash.com/user/c_v_r/1600x900"
+                          width="90%"
+                          alt=""
+                      /></a>
+                      <div class="card-body px-2">
+                        <h6 class="fw-bold fs-1 heading-color">Product 4</h6>
+                        <p class="mb-0 card-text text-left">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Consequuntur libero quo dolor asperiores
+                          distinctio suscipit? Veritatis aspernatur
+                        </p>
+                        <div class="mt-3">
+                          <a
+                            class="text-center p-2 d-block btn btn-outline-primary"
+                            href="detail/1"
+                            >Detail</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 pb-lg-6 px-lg-4 pb-4">
+                  <div class="card py-3 shadow-sm h-100 hover-top">
+                    <div class="text-center">
+                      <a href="detail/1"
+                        ><img
+                          class="image-zoom rounded"
+                          src="https://source.unsplash.com/user/c_v_r/1600x900"
+                          width="90%"
+                          alt=""
+                      /></a>
+                      <div class="card-body px-2">
+                        <h6 class="fw-bold fs-1 heading-color">Product 5</h6>
+                        <p class="mb-0 card-text text-left">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Consequuntur libero quo dolor asperiores
+                          distinctio suscipit? Veritatis aspernatur
+                        </p>
+                        <div class="mt-3">
+                          <a
+                            class="text-center p-2 d-block btn btn-outline-primary"
+                            href="detail/1"
+                            >Detail</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 pb-lg-6 px-lg-4 pb-4">
+                  <div class="card py-3 shadow-sm h-100 hover-top">
+                    <div class="text-center">
+                      <a href="detail/1"
+                        ><img
+                          class="image-zoom rounded"
+                          src="https://source.unsplash.com/user/c_v_r/1600x900"
+                          width="90%"
+                          alt=""
+                      /></a>
+                      <div class="card-body px-2">
+                        <h6 class="fw-bold fs-1 heading-color">Product 6</h6>
+                        <p class="mb-0 card-text text-left">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Consequuntur libero quo dolor asperiores
+                          distinctio suscipit? Veritatis aspernatur
+                        </p>
+                        <div class="mt-3">
+                          <a
+                            class="text-center p-2 d-block btn btn-outline-primary"
+                            href="detail/1"
+                            >Detail</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END LIST PRODUK -->
+        </div>
+      </div>
+      <!-- END DAFTAR PRODUK -->
+<!-- Klient -->
+<div class="container text-center my-5" id="client">
+          <h2 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">Klein Kita</h2>
+          <h5 class="my-2 fw-light"></h5>
+          <div
+            class="row mx-auto justify-content-center my-5"
+            style="background-color: rgb(255, 255, 255)"
+          >
+            <div class="col-6 col-md-2">
+              <img src="assets/img/mitra/mitra0.jpg" width="100" alt="" />
+            </div>
+            <div class="col-6 col-md-2">
+              <img src="assets/img/mitra/mitra1.jpg" width="100" alt="" />
+            </div>
+            <div class="col-6 col-md-2">
+              <img src="assets/img/mitra/mitra2.jpg" width="100" alt="" />
+            </div>
+            <div class="col-6 col-md-2">
+              <img src="assets/img/mitra/mitra3.jpg" width="100" alt="" />
+            </div>
+            <div class="col-6 col-md-2">
+              <img src="assets/img/mitra/mitra4.jpg" width="100" alt="" />
+            </div>
+            <div class="col-6 col-md-2">
+              <img src="assets/img/mitra/mitra5.jpg" width="100" alt="" />
+            </div>
+            <div class="col-6 col-md-2">
+              <img src="assets/img/mitra/mitra6.jpg" width="100" alt="" />
+            </div>
+            <div class="col-6 col-md-2">
+              <img src="assets/img/mitra/mitra7.jpg" width="100" alt="" />
+            </div>
+            <div class="col-6 col-md-2">
+              <img src="assets/img/mitra/mitra8.jpg" width="100" alt="" />
+            </div>
+            <div class="col-6 col-md-2">
+              <img src="assets/img/mitra/mitra9.jpg" width="100" alt="" />
+            </div>
+            <div class="col-6 col-md-2">
+              <img src="assets/img/mitra/mitra10.jpg" width="100" alt="" />
+            </div>
+          </div>
+          <a class="text-info" href="clients"
+            >Lihat semua <i class="fa-solid fa-arrow-right-long"></i
+          ></a>
+        </div>
+        <!-- END KLIEN -->
+        <!-- FOOTER -->
+<footer
+          class="text-center text-lg-start text-muted text-dark bg-primary-gradient"
+          id="contact"
+          style="position: absolute; left: 0px; right: 0px"
+        >
+          <section
+            class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+          >
+            <div class="me-5 d-none d-lg-block"></div>
+            <div class="">
+              <a href="" class="me-4 text-white"
+                ><i class="fab fa-facebook-f"></i></a
+              ><a href="" class="me-4 text-white"
+                ><i class="fab fa-twitter"></i></a
+              ><a href="" class="me-4 text-white"
+                ><i class="fab fa-google"></i></a
+              ><a href="" class="me-4 text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </section>
+          <section class="py-0 bg-primary-gradient">
+            <div
+              class="bg-holder"
+              style="
+                background-image: url('assets/img/illustrations/footer-bg.png');
+                background-position: center bottom;
+                background-size: cover;
+              "
+            ></div>
+            <div class="container">
+              <div class="row justify-content-lg-between pt-5">
+                <div
+                  class="col-6 col-sm-4 col-lg-auto mb-3"
+                  style="text-align: left"
+                >
+                  <h5 class="mb-5 text-white text-uppercase">
+                    Finishing Machine
+                  </h5>
+                  <ul class="list-unstyled mb-md-4 mb-lg-0">
+                    <li class="mb-3">
+                      <a class="text-light text-decoration-none"
+                        >Mesin Shimming FR900</a
+                      >
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-light text-decoration-none"
+                        >Mesin Cannon IR5000i</a
+                      >
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-light text-decoration-none"
+                        >Mesin Shimming FR-800PH</a
+                      >
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-light text-decoration-none"
+                        >Paper Trimmer</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="col-6 col-sm-4 col-lg-auto mb-3"
+                  style="text-align: left"
+                >
+                  <h5 class="mb-5 text-white text-uppercase">Kontak</h5>
+                  <ul class="list-unstyled mb-md-4 mb-lg-0">
+                    <li class="mb-3">
+                      <a class="text-light text-decoration-none"
+                        ><i class="fas fa-home me-3"></i>Jl. Kartini PR 11 No
+                        108 Selasar Salatiga</a
+                      >
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-light text-decoration-none"
+                        ><i class="fas fa-phone me-3"></i>+6288808888880</a
+                      >
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-light text-decoration-none"
+                        ><i class="fas fa-envelope me-3"></i
+                        >sidocvmulyo@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="col-6 col-sm-4 col-lg-auto mb-3"
+                  style="text-align: left"
+                >
+                  <h5 class="mb-5 text-white text-uppercase"></h5>
+                  <ul class="list-unstyled mb-md-4 mb-lg-0"></ul>
+                </div>
+                <div
+                  class="col-6 col-sm-4 col-lg-auto mb-3"
+                  style="text-align: left"
+                >
+                  <h5 class="mb-5 text-white text-uppercase"></h5>
+                  <ul class="list-unstyled mb-md-4 mb-lg-0"></ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div
+            class="text-center p-4 text-dark"
+            style="background-color: rgba(0, 0, 0, 0.05)"
+          >
+            © Copyright 2022
+          </div>
+        </footer>
+        <!-- END FOOTER -->
+        <a
+          href="https://api.whatsapp.com/send?phone=+6288808888880&amp;text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+          class="float"
+          target="_blank"
+          ><i class="fa-brands fa-whatsapp my-float"></i
+        ></a>
+    </main>
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script>
+      AOS.refresh()
+      AOS.init({
+        once: true,
+        duration: 3000,
+      })
+    </script>
+  </body>
+</html>

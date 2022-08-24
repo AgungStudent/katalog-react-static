@@ -1,6 +1,5 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { Link } from "react-router-dom"
-import ItemProduct from "./ItemProduct"
 
 // TODO: edit responsive mobile
 const Client = () => {
@@ -9,7 +8,7 @@ const Client = () => {
 
   return (
     <div className="container text-center my-5" id="client">
-      <h2 className="font-weight-light">Klein Kita</h2>
+      <h2 className="fw-bold fs-3 fs-lg-5 lh-sm mb-3">Klein Kita</h2>
       <h5 className="my-2 fw-light"></h5>
       <div
         className="row mx-auto justify-content-center my-5"
@@ -22,7 +21,7 @@ const Client = () => {
             <div className=" col-6 col-md-2" key={i}>
               <img src={image} width="100" alt="" />
             </div>
-          ) : null
+          ) : null 
         )}
       </div>
       <Link to="/clients" className="text-info">
