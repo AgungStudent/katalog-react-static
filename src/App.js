@@ -23,7 +23,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <main className="main">
+      <main className="main" style={{backgroundColor: 'white'}}>
         <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
